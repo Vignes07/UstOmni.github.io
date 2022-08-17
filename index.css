@@ -251,7 +251,7 @@ height: 5rem; */
     gap: 1rem;
     border: 1px 1px;
     padding: 10px 20px;
-    overflow: scroll;
+    overflow-x: scroll;
     height: 4rem;
 }
 
@@ -317,6 +317,10 @@ height: 5rem; */
     padding: 0.5rem;
     background-color: white;
     margin: 0.5rem;
+}
+
+#vendor {
+    padding-top: 1.6rem;
 }
 
 .dem {
@@ -744,6 +748,7 @@ height: 5rem; */
     .de2 {
         display: inline-flex;
         padding-left: 8rem;
+        padding-top: 1rem;
     }
     .letters {
         display: flex;
@@ -779,6 +784,7 @@ height: 5rem; */
     .de3 {
         display: inline-flex;
         padding-left: 8rem;
+        padding-top: 1rem;
     }
     .nextline3 {
         display: flex;
@@ -1174,6 +1180,7 @@ height: 5rem; */
     .de2 {
         display: inline-flex;
         padding-left: 12rem;
+        padding-top: 1rem;
     }
     .letters {
         display: flex;
@@ -1209,6 +1216,7 @@ height: 5rem; */
     .de3 {
         display: inline-flex;
         padding-left: 11rem;
+        padding-top: 1rem;
     }
     .nextline3 {
         display: flex;
