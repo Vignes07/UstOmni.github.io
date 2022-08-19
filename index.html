@@ -16,10 +16,11 @@
 
 <body>
 
-    <nav id="hamnav">
-        <label style="float: right;" for="hamburger">&#9776;</label>
-        <input style="float: right;" type="checkbox" id="hamburger" />
-        <div class="header">
+
+    <div class="header">
+        <nav id="hamnav">
+            <label style="float: right;" for="hamburger">&#9776;</label>
+            <input style="float: right;" type="checkbox" id="hamburger" />
             <div class="navbar">
                 <div class="navbar-logo">
                     <img id="logo" src="assets\UST Omni.webp" alt="">
@@ -42,16 +43,15 @@
                     <i id="usrl" class="fa fa-user-circle-o" aria-hidden="true"></i>
                 </div>
             </div>
-        </div>
-
-        <div id="hamitems-m" class="hamitems-m navbar-items-m">
-            <div class="items-m item1-m bor-white bor-active-m" onclick="it1()"><img class="it-l" src="assets\Home.webp" alt="">Dashboard</div>
-            <div class="items-m item2-m bor-white" onclick="it2()"><img class=" it-l " src="assets\Shipment_Mgmt.webp " alt=" ">Shipments</div>
-            <div class="items-m item3-m bor-white" onclick="it3()"><img class="it-l" src="assets\file.png" alt="">Reports</div>
-            <div class="items-m item4-m bor-white" onclick="it4()"><img class=" it-l " src="assets\cont.png " alt=" ">Control Tower</div>
-            <div class="items-m item5-m bor-white" onclick="it5()"><img class="it-l" src="assets\act.png" alt="">Action Panel</div>
-        </div>
-    </nav>
+            <div id="hamitems-m" class="hamitems-m navbar-items-m">
+                <div class="items-m item1-m bor-white bor-active-m" onclick="it1()"><img class="it-l" src="assets\Home.webp" alt="">Dashboard</div>
+                <div class="items-m item2-m bor-white" onclick="it2()"><img class=" it-l " src="assets\Shipment_Mgmt.webp " alt=" ">Shipments</div>
+                <div class="items-m item3-m bor-white" onclick="it3()"><img class="it-l" src="assets\file.png" alt="">Reports</div>
+                <div class="items-m item4-m bor-white" onclick="it4()"><img class=" it-l " src="assets\cont.png " alt=" ">Control Tower</div>
+                <div class="items-m item5-m bor-white" onclick="it5()"><img class="it-l" src="assets\act.png" alt="">Action Panel</div>
+            </div>
+        </nav>
+    </div>
 
     <div class="main">
         <!-- <div class="scroll-top">

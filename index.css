@@ -221,7 +221,7 @@
     
     .sub-ship>div>ol {
         display: flex;
-        gap: 3rem;
+        /* gap: 3rem; */
         list-style: none;
         cursor: pointer;
     }
@@ -1059,8 +1059,8 @@
             /* gap: 3rem; */
             list-style: none;
             cursor: pointer;
-            padding: 1rem 0.5rem;
-            /* justify-content: spa; */
+            padding: 0.7rem 0.4rem;
+            /* justify-content: space-around; */
         }
         .sub-ship {
             display: flex;
