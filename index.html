@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;400&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -38,11 +38,14 @@
                 <div class="navbar-profile">
                     <p id="user">Profile <i id="usrl" class="fa fa-user-circle-o" aria-hidden="true"></i></p>
                 </div>
+                <div class="navbar-profile-m">
+                    <i id="usrl" class="fa fa-user-circle-o" aria-hidden="true"></i>
+                </div>
             </div>
         </div>
 
         <div id="hamitems-m" class="hamitems-m navbar-items-m">
-            <div class="items-m item1-m bor-white bor-active" onclick="it1()"><img class="it-l" src="assets\Home.webp" alt="">Dashboard</div>
+            <div class="items-m item1-m bor-white bor-active-m" onclick="it1()"><img class="it-l" src="assets\Home.webp" alt="">Dashboard</div>
             <div class="items-m item2-m bor-white" onclick="it2()"><img class=" it-l " src="assets\Shipment_Mgmt.webp " alt=" ">Shipments</div>
             <div class="items-m item3-m bor-white" onclick="it3()"><img class="it-l" src="assets\file.png" alt="">Reports</div>
             <div class="items-m item4-m bor-white" onclick="it4()"><img class=" it-l " src="assets\cont.png " alt=" ">Control Tower</div>
@@ -50,53 +53,139 @@
         </div>
     </nav>
 
-    <div class="scroll-top">
-        <div class="flex-container-top">
-            <div class="flex flex-top">
-                <div>
-                    <img style="float: right; margin: 1rem 0.2rem;padding-right: 1rem;" src="assets/check-circle.webp" alt="">
-                    <div class="sub-flex">
-                        <p id="info">Action to take</p>
-                        <img id="info" src="assets\info.webp" alt="" width="16px" height="20px" style="padding-top: 4px;">
+    <div class="main">
+        <!-- <div class="scroll-top">
+            <div class="flex-container-top">
+                <div class="flex flex-top">
+                    <div>
+                        <img style="float: right; margin: 1rem 0.2rem;padding-right: 1rem;" src="assets/check-circle.webp" alt="">
+                        <div class="sub-flex">
+                            <p id="info">Action to take</p>
+                            <img id="info" src="assets\info.webp" alt="" width="16px" height="20px" style="padding-top: 4px;">
+                        </div>
+                        <div class="sub-flex1">
+                            <h2>24</h2>
+                        </div>
                     </div>
-                    <div class="sub-flex1">
-                        <h2>24</h2>
+                </div>
+                <div class="flex  flex-top">
+                    <div>
+                        <img style="float: right; margin: 1rem 0.2rem;padding-right: 1rem;" src="assets/clock.webp" alt="">
+                        <div class="sub-flex">
+                            <p id="info">Pending approvals</p>
+                            <img id="info" src="assets\info.webp" alt="" width="16px" height="20px" style="padding-top: 4px;">
+                        </div>
+                        <div class="sub-flex1">
+                            <h2>13</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex  flex-top">
+                    <div>
+                        <img style="float: right; margin: 1rem 0.2rem;padding-right: 1rem;" src="assets/Group 33740.webp" alt="">
+                        <div class="sub-flex">
+                            <p id="info">Delivered in full</p>
+                            <img id="info" src="assets\info.webp" alt="" width="16px" height="20px" style="padding-top: 4px;">
+                        </div>
+                        <div class="sub-flex1">
+                            <h2>97%</h2>
+                            <h6 style="margin-top: 1rem;margin-left: 0.5rem;color: gray;">Last 7 days</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex  flex-top">
+                    <div>
+                        <img style="float: right; margin: 1rem 0.2rem;padding-right: 1rem;" src="assets/Group 33740.webp" alt="">
+                        <div class="sub-flex">
+                            <p id="info">Inbound Freight as % COGS</p>
+                            <img id="info" src="assets\info.webp" alt="" width="16px" height="20px" style="padding-top: 4px;">
+                        </div>
+                        <div class="sub-flex1">
+                            <div class="color_circles">
+                                <div>
+                                    <p>Frozen</p>
+                                    <div class="circle"></div>5%
+                                </div>
+                                <div>
+                                    <p>Pershable</p>
+                                    <div class="circle1"></div>3%
+                                </div>
+                                <div>
+                                    <p>Fresh</p>
+                                    <div class="circle2"></div>6%
+                                </div>
+                                <div>
+                                    <p>Dry</p>
+                                    <div class="circle3"></div>10%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-top">
+                    <div>
+                        <img style="float: right; margin: 1rem 0.2rem;padding-right: 1rem;" src="assets/check-circle.webp" alt="">
+                        <div class="sub-flex">
+                            <p id="info">Action to take</p>
+                            <img id="info" src="assets\info.webp" alt="" width="16px" height="20px" style="padding-top: 4px;">
+                        </div>
+                        <div class="sub-flex1">
+                            <h2>24</h2>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="flex  flex-top">
-                <div>
-                    <img style="float: right; margin: 1rem 0.2rem;padding-right: 1rem;" src="assets/clock.webp" alt="">
-                    <div class="sub-flex">
-                        <p id="info">Pending approvals</p>
-                        <img id="info" src="assets\info.webp" alt="" width="16px" height="20px" style="padding-top: 4px;">
+        </div> -->
+
+        <div class="g-scroll">
+            <div class="container">
+
+
+                <div class="grid_box">
+                    <div>
+                        <div class="info">
+                            <div>Actions to take</div>
+                            <div> <img src="/assets/info.webp" alt="icon"></div>
+                        </div>
+
+                        <span class="num">24</span>
                     </div>
-                    <div class="sub-flex1">
-                        <h2>13</h2>
-                    </div>
+                    <div><img src="/assets/check-circle.webp" alt="tick"></div>
                 </div>
-            </div>
-            <div class="flex  flex-top">
-                <div>
-                    <img style="float: right; margin: 1rem 0.2rem;padding-right: 1rem;" src="assets/Group 33740.webp" alt="">
-                    <div class="sub-flex">
-                        <p id="info">Delivered in full</p>
-                        <img id="info" src="assets\info.webp" alt="" width="16px" height="20px" style="padding-top: 4px;">
+
+                <div class="grid_box">
+                    <div>
+                        <div class="info">
+                            <div>Pending approvals</div>
+                            <div> <img src="/assets/info.webp" alt="icon"></div>
+                        </div>
+                        <span class="num">13</span>
                     </div>
-                    <div class="sub-flex1">
-                        <h2>97%</h2>
-                        <h6 style="margin-top: 1rem;margin-left: 0.5rem;color: gray;">Last 7 days</h6>
-                    </div>
+                    <div><img src="/assets/clock.webp" alt="clocking"></div>
                 </div>
-            </div>
-            <div class="flex  flex-top">
-                <div>
-                    <div class="sub-flex">
-                        <p id="info">Inbound Freight as % COGS</p>
-                        <img id="info" src="assets\info.webp" alt="" width="16px" height="20px" style="padding-top: 4px;">
+
+                <div class="grid_box">
+                    <div>
+                        <div class="info">
+                            <div>Delivery in full</div>
+                            <div> <img src="/assets/info.webp" alt="icon"></div>
+                        </div>
+                        <span class="num">97% </span><sub>Last 7 days</sub>
                     </div>
-                    <div class="sub-flex1">
-                        <div class="color_circles">
+                    <div><img src="/assets/Group 33740.webp" alt="deliver"></div>
+                </div>
+
+
+                <div class="lgb">
+                    <div class="igb">
+                        <div class="info">
+                            <div>
+                                <p class="last_grid_box_para">Inbound Freight as % of COGS</p>
+                            </div>
+                            <div> <img src="/assets/info.webp" alt="icon"></div>
+                        </div>
+
+                        <div class="cc">
                             <div>
                                 <p>Frozen</p>
                                 <div class="circle"></div>5%
@@ -115,389 +204,373 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="si">
+                        <img src="/assets/Group 33741.webp" alt="fro">
+                    </div>
+
                 </div>
+
+                <div class="grid_box">
+                    <div>
+                        <div class="info">
+                            <div>On Time Delivery</div>
+                            <div> <img src="/assets/info.webp" alt="icon"></div>
+                        </div>
+                        <span class="num">93% </span><sub>Last 7 days</sub>
+                    </div>
+                    <div><img src="/assets/check-circle.webp" alt="tick"></div>
+                </div>
+
+                <div class="grid_box">
+                    <div>
+                        <div class="info">
+                            <div>Cost/Pound/Mile</div>
+                            <div> <img src="/assets/info.webp" alt="icon"></div>
+                        </div>
+
+                        <span class="num">$1.45 </span><sub>Last 7 days</sub>
+                    </div>
+                    <div><img src="/assets/check-circle.webp" alt="tick"></div>
+                </div>
+
+
+
+
             </div>
         </div>
-    </div>
 
 
-    <div id="flex-container">
-        <div id="left">
-            <div id="top">
-                <div class="flex flex-demo" id="first">
-                    <div class="flex flex1" style="flex-grow: 4">
-                        <div class="sub-ship">
-                            <div>
-                                <ol>
-                                    <li id="it6" class="iow bor-white bor-active" onclick="it6()">Inbound</li>
-                                    <li id="it7" class="iow bor-white" onclick="it7()">Outbound</li>
-                                    <li id="it8" class="iow bor-white" onclick="it8()">Watchlist</li>
-                                </ol>
-                            </div>
-                            <div>
-                                <p style="cursor: pointer;">view all shipments ></p>
-                            </div>
-                        </div>
-                        <div class="search">
-                            <div class="sear">
-                                <span id="bg-active" class="hover-box">All<b>(25)</b></span>
-                                <span class="hover-box">Delayed<b>(10)</b></span>
-                                <span class="hover-box">Early<b>(6)</b></span>
-                                <span class="hover-box">Rescheduled<b>(2)</b></span>
-                                <span class="hover-box">UnderReview<b>(7)</b></span>
-                                <span class="hover-box">OnTime<b>(7)</b></span>
-                            </div>
-                            <div>
+        <div id="flex-container">
+            <div id="left">
+                <div id="top">
+                    <div class="flex flex-demo" id="first">
+                        <div class="flex flex1" style="flex-grow: 4">
+                            <div class="sub-ship">
                                 <div>
-                                    <span class="material-symbols-outlined">
-                                        search
-                                    </span>
-                                    <input type="text" placeholder="Search by: Shipment ID, Origin, Destination,Product category,vendor">
+                                    <ol>
+                                        <li id="it6" class="iow bor-white bor-active" onclick="it6()">Inbound</li>
+                                        <li id="it7" class="iow bor-white" onclick="it7()">Outbound</li>
+                                        <li id="it8" class="iow bor-white" onclick="it8()">Watchlist</li>
+                                    </ol>
+                                </div>
+                                <div id="viewAll">
+                                    <p style="cursor: pointer;">view all shipments ></p>
                                 </div>
                             </div>
+                            <div class="search">
+                                <div class="sear">
+                                    <span id="bg-active" class="hover-box">All<b>(25)</b></span>
+                                    <span class="hover-box">Delayed<b>(10)</b></span>
+                                    <span class="hover-box">Early<b>(6)</b></span>
+                                    <span class="hover-box">Rescheduled<b>(2)</b></span>
+                                    <span class="hover-box">UnderReview<b>(7)</b></span>
+                                    <span class="hover-box">OnTime<b>(7)</b></span>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span class="material-symbols-outlined">
+                                            search
+                                        </span>
+                                        <input type="text" placeholder="Search by: Shipment ID, Origin, Destination,Product category,vendor">
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
+                    </div>
+                </div>
+
+
+                <div id="bottom">
+                    <div class="flex flex-demo" id="fourth">
+                        <div class="firstone">
+                            <div class="flex_one">
+                                <div class="shipping_block">
+                                    <p class="shipping">Shipment_ID</p>
+                                    <p class="ship_number">109669449</p>
+                                </div>
+                                <div class="images_block">
+                                    <div class="immaging">
+                                        <img src="/assets/Group 33891.webp">
+                                    </div>
+                                    <div class="immaging">
+                                        <img src="/assets/Group 33887.png">
+                                    </div>
+                                    <div class="immaging">
+                                        <p>ON TIME</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex_two">
+                                <div class="arrow_1">
+                                    <div>
+                                        <img src="/assets/Vectorimage.png">
+                                    </div>
+
+                                    <div class="starting">
+                                        <p class="start">Origin</p>
+                                        <p class="stat_last">Sikkim, IN</p>
+                                    </div>
+                                </div>
+                                <div class="arrow_2">
+                                    <div>
+                                        <img src="/assets/Vector.png">
+                                    </div>
+                                    <div class="ending">
+                                        <p class="dest">Destination<br></p>
+                                        <p class="dest_last">Seattle, USA</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex_three">
+                                <div>
+                                    <p class="three_1">PO#<br></p>
+                                    <p class="no">661234</p>
+                                    <br>
+                                    <p class="three_1">Vendor</p>
+                                    <p class="no">Bailey</p>
+                                </div>
+                                <div class="right_side">
+                                    <p class="three_1">Planned ETA<br></p>
+                                    <p class="no">Jan 27, 2021 03:42 PM EST</p>
+                                    <br>
+                                    <p class="three_1">Current ETA</p>
+                                    <p class="no">Jan 31,2021 10:17 PM EST</p>
+                                </div>
+                            </div>
+                            <div class="footering">
+                                <img src="assets\icon_Fire.png" alt="im1">
+                                <img src="assets\icon_Fire1.png" alt="im2">
+                                <img src="assets\Group 37169.png" alt="im3">
+                                <img src="assets\icon_Fire3.png" alt="im4">
+                                <img src="assets\icon_Fire4.png" alt="im5">
+                                <img src="assets\icon_Fire5.png" alt="im6">
+                            </div>
+
+                        </div>
+
+
+                        <div class="firstone">
+                            <div class="flex_one">
+                                <div class="shipping_block">
+                                    <p class="shipping">Shipment_ID</p>
+                                    <p class="ship_number">109669449</p>
+                                </div>
+                                <div class="images_block">
+                                    <div class="immaging">
+                                        <img src="/assets/Group 33891.webp">
+                                    </div>
+                                    <div class="immaging">
+                                        <img src="/assets/Group 33887.png">
+                                    </div>
+                                    <div class="immaging">
+                                        <p>ON TIME</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex_two">
+                                <div class="arrow_1">
+                                    <div>
+                                        <img src="/assets/Vectorimage.png">
+                                    </div>
+
+                                    <div class="starting">
+                                        <p class="start">Origin</p>
+                                        <p class="stat_last">Sikkim, IN</p>
+                                    </div>
+                                </div>
+                                <div class="arrow_2">
+                                    <div>
+                                        <img src="/assets/Vector.png">
+                                    </div>
+                                    <div class="ending">
+                                        <p class="dest">Destination<br></p>
+                                        <p class="dest_last">Seattle, USA</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex_three">
+                                <div>
+                                    <p class="three_1">PO#<br></p>
+                                    <p class="no">661234</p>
+                                    <br>
+                                    <p class="three_1">Vendor</p>
+                                    <p class="no">Bailey</p>
+                                </div>
+                                <div class="right_side">
+                                    <p class="three_1">Planned ETA<br></p>
+                                    <p class="no">Jan 27, 2021 03:42 PM EST</p>
+                                    <br>
+                                    <p class="three_1">Current ETA</p>
+                                    <p class="no">Jan 31,2021 10:17 PM EST</p>
+                                </div>
+                            </div>
+                            <div class="footering">
+                                <img src="assets\icon_Fire.png" alt="im1">
+                                <img src="assets\icon_Fire1.png" alt="im2">
+                                <img src="assets\Group 37169.png" alt="im3">
+                                <img src="assets\icon_Fire3.png" alt="im4">
+                                <img src="assets\icon_Fire4.png" alt="im5">
+                                <img src="assets\icon_Fire5.png" alt="im6">
+                            </div>
+
+                        </div>
+
+                        <div class="firstone">
+                            <div class="flex_one">
+                                <div class="shipping_block">
+                                    <p class="shipping">Shipment_ID</p>
+                                    <p class="ship_number">109669449</p>
+                                </div>
+                                <div class="images_block">
+                                    <div class="immaging">
+                                        <img src="/assets/Group 33891.webp">
+                                    </div>
+                                    <div class="immaging">
+                                        <img src="/assets/Group 33887.png">
+                                    </div>
+                                    <div class="immaging">
+                                        <p style="background-color: #f620201A; color: #f62020;">DELAYED</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex_two">
+                                <div class="arrow_1">
+                                    <div>
+                                        <img src="/assets/Vectorimage.png">
+                                    </div>
+
+                                    <div class="starting">
+                                        <p class="start">Origin</p>
+                                        <p class="stat_last">Sikkim, IN</p>
+                                    </div>
+                                </div>
+                                <div class="arrow_2">
+                                    <div>
+                                        <img src="/assets/Vector.png">
+                                    </div>
+                                    <div class="ending">
+                                        <p class="dest">Destination<br></p>
+                                        <p class="dest_last">Seattle, USA</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex_three">
+                                <div>
+                                    <p class="three_1">PO#<br></p>
+                                    <p class="no">661234</p>
+                                    <br>
+                                    <p class="three_1">Vendor</p>
+                                    <p class="no">Bailey</p>
+                                </div>
+                                <div class="right_side">
+                                    <p class="three_1">Planned ETA<br></p>
+                                    <p class="no">Jan 27, 2021 03:42 PM EST</p>
+                                    <br>
+                                    <p class="three_1">Current ETA</p>
+                                    <p class="no">Jan 31,2021 10:17 PM EST</p>
+                                </div>
+                            </div>
+                            <div class="footering">
+                                <img src="assets\icon_Fire.png" alt="im1">
+                                <img src="assets\icon_Fire1.png" alt="im2">
+                                <img src="assets\Group 37169.png" alt="im3">
+                                <img src="assets\icon_Fire3.png" alt="im4">
+                                <img src="assets\icon_Fire4.png" alt="im5">
+                                <img src="assets\icon_Fire5.png" alt="im6">
+                            </div>
+
+                        </div>
+
+                        <div class="firstone">
+                            <div class="flex_one">
+                                <div class="shipping_block">
+                                    <p class="shipping">Shipment_ID</p>
+                                    <p class="ship_number">109669449</p>
+                                </div>
+                                <div class="images_block">
+                                    <div class="immaging">
+                                        <img src="/assets/Group 33891.webp">
+                                    </div>
+                                    <div class="immaging">
+                                        <img src="/assets/Group 33887.png">
+                                    </div>
+                                    <div class="immaging">
+                                        <p style="background-color: #e7f4ff; color: #53cb5d;">RESHEDULED</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex_two">
+                                <div class="arrow_1">
+                                    <div>
+                                        <img src="/assets/Vectorimage.png">
+                                    </div>
+
+                                    <div class="starting">
+                                        <p class="start">Origin</p>
+                                        <p class="stat_last">Sikkim, IN</p>
+                                    </div>
+                                </div>
+                                <div class="arrow_2">
+                                    <div>
+                                        <img src="/assets/Vector.png">
+                                    </div>
+                                    <div class="ending">
+                                        <p class="dest">Destination<br></p>
+                                        <p class="dest_last">Seattle, USA</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex_three">
+                                <div>
+                                    <p class="three_1">PO#<br></p>
+                                    <p class="no">661234</p>
+                                    <br>
+                                    <p class="three_1">Vendor</p>
+                                    <p class="no">Bailey</p>
+                                </div>
+                                <div class="right_side">
+                                    <p class="three_1">Planned ETA<br></p>
+                                    <p class="no">Jan 27, 2021 03:42 PM EST</p>
+                                    <br>
+                                    <p class="three_1">Current ETA</p>
+                                    <p class="no">Jan 31,2021 10:17 PM EST</p>
+                                </div>
+                            </div>
+                            <div class="footering">
+                                <img src="assets\icon_Fire.png" alt="im1">
+                                <img src="assets\icon_Fire1.png" alt="im2">
+                                <img src="assets\Group 37169.png" alt="im3">
+                                <img src="assets\icon_Fire3.png" alt="im4">
+                                <img src="assets\icon_Fire4.png" alt="im5">
+                                <img src="assets\icon_Fire5.png" alt="im6">
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
             </div>
-            <div id="bottom">
-                <div class="flex flex-demo" id="fourth">
-                    <!-- <iframe id="inline" src="inline.html" title="Iframe Example"></iframe>
-                    <div class="scroll">
-
-                    </div> -->
-                    <div class="firstone">
-                        <div class="dem">
-                            <div class="ship">
-                                <p>Shipment ID</p>
-                                <span>109669449</span>
-                            </div>
-                            <div class="de">
-                                <div class="demo">
-                                    <img src="assets\Group 33891.png" alt="globe">
-                                </div>
-                                <div class="demo">
-                                    <img src="assets\Group 33887.png" alt="bus">
-                                </div>
-                                <div class="demo">
-                                    <table class="ontime">
-                                        <th>ON TIME</th>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="nextline">
-                            <div class="sikkim">
-                                <img src="assets\Vectorimage.png" alt="uparrow">
-                            </div>
-                            <div class="sikkim2">
-                                <p>Origin<br></p><span>Sikkim, IN</span>
-                            </div>
-                            <div class="seattle">
-                                <img src="assets\Vector.png" alt="downarrow">
-                            </div>
-                            <div class="seattle2">
-                                <p>Destination<br></p>
-                                <span>Seattle, USA</span>
-                            </div>
-                        </div>
-                        <div class="leftone">
-                            <div class="po">
-                                <p>PO#<br>661234</p>
-                                <br>
-                                <p id="vendor">Vendor<br>Bailey</p>
-                            </div>
-                            <div class="plan">
-                                <p>Planned ETA<br> Jan 27, 2021 03:42 PM EST</p>
-                                <br>
-                                <p>Current ETA<br> Jan 31, 2021 10:17 PM EST</p>
-                            </div>
-                        </div>
-
-                        <div class="footer">
-                            <img src="assets\icon_Fire.png" alt="im1">
-                            <img src="assets\icon_Fire1.png" alt="im2">
-                            <img src="assets\Group 37169.png" alt="im3">
-                            <img src="assets\icon_Fire3.png" alt="im4">
-                            <img src="assets\icon_Fire4.png" alt="im5">
-                            <img src="assets\icon_Fire5.png" alt="im6">
-                        </div>
-
+            <div class="right">
+                <div class="flex flex-demo" id="fifth">
+                    <div class="head2">
+                        <span id="rc">Risk Chain <img id="rcl" src="assets/Group 33767.webp" alt=""></span>
                     </div>
-
-                    <div class="firstone">
-                        <div class="dem">
-                            <div class="ship">
-                                <p>Shipment ID</p>
-                                <span>109669449</span>
-                            </div>
-                            <div class="de">
-                                <div class="demo">
-                                    <img src="assets\Group 33891.png" alt="globe">
-                                </div>
-                                <div class="demo">
-                                    <img src="assets\Group 33887.png" alt="bus">
-                                </div>
-                                <div class="demo">
-                                    <table class="ontime">
-                                        <th>ON TIME</th>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
+                    <center id="texttt">
+                        <h2>UST Omni Services</h2>
                         <br>
-                        <div class="nextline">
-                            <div class="sikkim">
-                                <img src="assets\Vectorimage.png" alt="uparrow">
-                            </div>
-                            <div class="sikkim2">
-                                <p>Origin<br></p><span>Sikkim, IN</span>
-                            </div>
-                            <div class="seattle">
-                                <img src="assets\Vector.png" alt="downarrow">
-                            </div>
-                            <div class="seattle2">
-                                <p>Destination<br></p>
-                                <span>Seattle, USA</span>
-                            </div>
-                        </div>
-                        <div class="leftone">
-                            <div class="po">
-                                <p>PO#<br>661234</p>
-                                <br>
-                                <p id="vendor">Vendor<br>Bailey</p>
-                            </div>
-                            <div class="plan">
-                                <p>Planned ETA<br> Jan 27, 2021 03:42 PM EST</p>
-                                <br>
-                                <p>Current ETA<br> Jan 31, 2021 10:17 PM EST</p>
-                            </div>
-                        </div>
-
-                        <div class="footer">
-                            <img src="assets\icon_Fire.png" alt="im1">
-                            <img src="assets\icon_Fire1.png" alt="im2">
-                            <img src="assets\Group 37169.png" alt="im3">
-                            <img src="assets\icon_Fire3.png" alt="im4">
-                            <img src="assets\icon_Fire4.png" alt="im5">
-                            <img src="assets\icon_Fire5.png" alt="im6">
-                        </div>
-
-                    </div>
-
-
-                    <!-- <div class="secondone">
-                        <div class="dem1">
-                            <div class="ship">
-                                <p>Shipment ID</p>
-                                <span>109669412</span>
-                            </div>
-                            <div class="de1">
-                                <div class="demo1">
-                                    <img src="assets\Group 33891.png" alt="globe">
-                                </div>
-                                <div class="demo1">
-                                    <img src="assets\Group 33886.png" alt="airplane">
-                                </div>
-                                <div class="demo1">
-                                    <table class="ontime">
-                                        <th>ON TIME</th>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="nextline">
-                            <div class="spain">
-                                <img src="assets\Vectorimage.png" alt="uparrow">
-                            </div>
-                            <div class="spain2">
-                                <p>Origin<br></p><span>Spain, IE</span>
-                            </div>
-                            <div class="seattle">
-                                <img src="assets\Vector.png" alt="downarrow">
-                            </div>
-                            <div class="seattle2">
-                                <p>Destination<br></p>
-                                <span>Seattle, USA</span>
-                            </div>
-                        </div>
-                        <div class="leftone">
-                            <div class="po">
-                                <p>PO#<br>661234</p>
-                                <br>
-                                <p id="vendor">Vendor<br>Bailey</p>
-                            </div>
-                            <div class="plan">
-                                <p>Planned ETA<br> Jan 27, 2021 03:42 PM EST</p>
-                                <br>
-                                <p>Current ETA<br> Jan 31, 2021 10:17 PM EST</p>
-                            </div>
-                        </div>
-
-                        <div class="footer">
-                            <img src="assets\icon_Fire.png" alt="im1">
-                            <img src="assets\icon_Fire1.png" alt="im2">
-                            <img src="assets\Group 37169.png" alt="im3">
-                            <img src="assets\icon_Fire3.png" alt="im4">
-                            <img src="assets\icon_Fire4.png" alt="im5">
-                            <img src="assets\icon_Fire5.png" alt="im6">
-                        </div>
-
-                    </div> -->
-                    <div class="thirdone">
-                        <div class="dem2">
-                            <div class="ship">
-                                <p>Shipment ID</p>
-                                <span>109669432</span>
-                            </div>
-                            <div class="de2">
-                                <div class="demo2">
-                                    <img src="assets\Group 33891.png" alt="globe">
-                                </div>
-                                <div class="demo2">
-                                    <img src="assets\Group 33882.png" alt="ship">
-                                </div>
-                                <div class="demo2">
-                                    <table class="delayed">
-                                        <th>DELAYED</th>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="letters">
-                            <div class="let1">
-                                <p>waiting Tracking Info </p>
-                            </div>
-                            <div class="let2">
-                                <p>4 hrs delayed</p>
-                            </div>
-                        </div>
-
-
-                        <div class="nextline2">
-                            <div class="dubbin">
-                                <img src="assets\Vectorimage.png" alt="uparrow">
-                            </div>
-                            <div class="dubbin2">
-                                <p>Origin<br></p><span>Dublin, IR</span>
-                            </div>
-                            <div class="seattle">
-                                <img src="assets\Vector.png" alt="downarrow">
-                            </div>
-                            <div class="seattle2">
-                                <p>Destination<br></p>
-                                <span>Seattle, USA</span>
-                            </div>
-                        </div>
-                        <div class="leftone">
-                            <div class="po">
-                                <p>PO#<br>661234</p>
-                                <br>
-                                <p id="vendor">Vendor<br>Bailey</p>
-                            </div>
-                            <div class="plan">
-                                <p>Planned ETA<br> Jan 27, 2021 03:42 PM EST</p>
-                                <br>
-                                <p>Current ETA<br> Jan 31, 2021 10:17 PM EST</p>
-                            </div>
-                        </div>
-
-                        <div class="footer1">
-                            <img src="assets\icon_Fire.png" alt="im1">
-                            <img src="assets\icon_Fire1.png" alt="im2">
-                            <img src="assets\Group 37169.png" alt="im3">
-                            <img src="assets\icon_Fire3.png" alt="im4">
-                            <img src="assets\icon_Fire4.png" alt="im5">
-                            <img src="assets\icon_Fire5.png" alt="im6">
-                        </div>
-
-                    </div>
-
-
-                    <div class="forthone">
-                        <div class="dem3">
-                            <div class="ship">
-                                <p>Shipment ID</p>
-                                <span>109669412</span>
-                            </div>
-                            <div class="de3">
-                                <div class="demo3">
-                                    <img src="assets\Group 33891.png" alt="globe">
-                                </div>
-                                <div class="demo3">
-                                    <img src="assets\Group 33886.png" alt="airoplane">
-                                </div>
-                                <div class="demo3">
-                                    <table class="Resheduled">
-                                        <th>RESHEDULED</th>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="nextline3">
-                            <div class="sikkim">
-                                <img src="assets\Vectorimage.png" alt="uparrow">
-                            </div>
-                            <div class="sikkim2">
-                                <p>Origin<br></p><span>Limoges, FR</span>
-                            </div>
-                            <div class="seattle">
-                                <img src="assets\Vector.png" alt="downarrow">
-                            </div>
-                            <div class="seattle2">
-                                <p>Destination<br></p>
-                                <span>Seattle, USA</span>
-                            </div>
-                        </div>
-                        <div class="leftone">
-                            <div class="po">
-                                <p>PO#<br>661234</p>
-                                <br>
-                                <p id="vendor">Vendor<br>Bailey</p>
-                            </div>
-                            <div class="plan">
-                                <p>Planned ETA<br> Jan 27, 2021 03:42 PM EST</p>
-                                <br>
-                                <p>Current ETA<br> Jan 31, 2021 10:17 PM EST</p>
-                            </div>
-                        </div>
-
-                        <div class="footer2">
-                            <img src="assets\icon_Fire.png" alt="im1">
-                            <img src="assets\icon_Fire1.png" alt="im2">
-                            <img src="assets\Group 37169.png" alt="im3">
-                            <img src="assets\icon_Fire3.png" alt="im4">
-                            <img src="assets\icon_Fire4.png" alt="im5">
-                            <img src="assets\icon_Fire5.png" alt="im6">
-                        </div>
-
-                    </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis enim quibusdam consequatur excepturi, ad adipisci dicta natus, nobis atque quod suscipit vitae omnis. Doloribus natus harum, odit iste quis nulla deserunt beatae
+                            repudiandae quod sed blanditiis dolorum temporibus veritatis quibusdam neque? Aspernatur exercitationem id ipsam consectetur dolorem libero distinctio harum debitis aut illo eligendi ratione laboriosam eaque eveniet qui error
+                            quas nisi sequi itaque, adipisci quam, vitae non fuga repudiandae. Consectetur, voluptas, aliquid et aspernatur quos excepturi velit iusto eligendi laudantium dicta molestias. Officiis, inventore harum! Veritatis, distinctio
+                            fugit! Voluptates nobis et corporis perspiciatis quo iure molestiae quam aspernatur explicabo?</p>
+                    </center>
                 </div>
-
             </div>
         </div>
-        <div class="right" style="background-color: white;">
-            <div class="flex flex-demo" id="fifth">
-                <div class="head2">
-                    <span id="rc">Risk Chain <img id="rcl" src="assets/Group 33767.webp" alt=""></span>
-                </div>
-                <center id="texttt">
-                    <h2>UST Omni Services</h2>
-                    <br>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis enim quibusdam consequatur excepturi, ad adipisci dicta natus, nobis atque quod suscipit vitae omnis. Doloribus natus harum, odit iste quis nulla deserunt beatae
-                        repudiandae quod sed blanditiis dolorum temporibus veritatis quibusdam neque? Aspernatur exercitationem id ipsam consectetur dolorem libero distinctio harum debitis aut illo eligendi ratione laboriosam eaque eveniet qui error quas
-                        nisi sequi itaque, adipisci quam, vitae non fuga repudiandae. Consectetur, voluptas, aliquid et aspernatur quos excepturi velit iusto eligendi laudantium dicta molestias. Officiis, inventore harum! Veritatis, distinctio fugit!
-                        Voluptates nobis et corporis perspiciatis quo iure molestiae quam aspernatur explicabo?</p>
-                </center>
-            </div>
-        </div>
+
     </div>
-
     <script>
         function removeall() {
             document.getElementById("it1").classList.remove("bor-active")
