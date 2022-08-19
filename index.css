@@ -7,8 +7,8 @@
     }
     
     .main {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         border: none;
     }
     
@@ -188,14 +188,12 @@
     
     #first {
         background-color: white;
-        margin: 0.4rem;
     }
     
     #fifth {
         height: 450px;
         flex-basis: 35%;
         background-color: white;
-        margin: 0.6rem;
         padding: 0;
     }
     
@@ -301,8 +299,7 @@
     .g-scroll {
         overflow-x: scroll;
         overflow-y: hidden;
-        margin: 0.6rem 0.4rem;
-        /* width:50rem; */
+        margin-bottom: 0.5rem;
     }
     
     .container {
@@ -537,7 +534,7 @@
     #fourth {
         gap: 5rem;
         height: 500px;
-        margin: 0 0.4rem;
+        /* margin: 0 0.4rem; */
         overflow-y: scroll;
     }
     
@@ -670,7 +667,7 @@
             display: grid;
             grid-template-columns: 50% 50%;
             gap: 0.4rem;
-            margin-left: 0.4rem;
+            /* margin-left: 0.4rem; */
         }
         .g-scroll::-webkit-scrollbar {
             display: none;
@@ -990,7 +987,7 @@
         }
         /* NAVBAR */
         .flex-demo {
-            margin-bottom: 30px;
+            /* margin-bottom: 30px; */
             background-color: white;
         }
         #flex-container {
@@ -1021,10 +1018,8 @@
             display: flex;
             flex-direction: column;
             flex-basis: 65%;
+            margin-right: 0.5rem;
         }
-        /* #left .flex { */
-        /* margin-right: 0.8rem; */
-        /* } */
         #top {
             display: flex;
             flex-basis: 35%;
@@ -1039,19 +1034,16 @@
         #first {
             background-color: white;
             flex-basis: 100%;
-            margin: 0.4rem;
         }
         #fourth {
             overflow-y: scroll;
             overflow-x: hidden;
             flex-basis: 100%;
             background-color: #f2f4f8;
-            /* background-color: white; */
             height: 380px;
             display: grid;
             grid-template-columns: 50% 50%;
             gap: 0.4rem;
-            margin-left: 0.4rem;
         }
         /*ufenrflnerfker*/
         .sub-ship>div>ol {
@@ -1113,7 +1105,7 @@
         .g-scroll {
             overflow-x: scroll;
             overflow-y: hidden;
-            margin: 0.6rem 0.4rem 0.4rem 0.4rem;
+            /* margin: 0.6rem 0.4rem 0.4rem 0.4rem; */
             /* width:50rem; */
         }
         .container {
