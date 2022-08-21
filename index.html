@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="index.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +18,7 @@
 <body>
 
 
-    <div class="header">
+    <header class="header">
         <nav id="hamnav">
             <label style="float: right;" for="hamburger">&#9776;</label>
             <input style="float: right;" type="checkbox" id="hamburger" />
@@ -39,9 +40,9 @@
                 <div class="navbar-profile">
                     <p id="user">Profile <i id="usrl" class="fa fa-user-circle-o" aria-hidden="true"></i></p>
                 </div>
-                <div class="navbar-profile-m">
+                <!-- <div class="navbar-profile-m">
                     <i id="usrl" class="fa fa-user-circle-o" aria-hidden="true"></i>
-                </div>
+                </div> -->
             </div>
             <div id="hamitems-m" class="hamitems-m navbar-items-m">
                 <div class="items-m item1-m bor-white bor-active-m" onclick="it1()"><img class="it-l" src="assets\Home.webp" alt="">Dashboard</div>
@@ -51,97 +52,13 @@
                 <div class="items-m item5-m bor-white" onclick="it5()"><img class="it-l" src="assets\act.png" alt="">Action Panel</div>
             </div>
         </nav>
-    </div>
+    </header>
 
     <div class="main">
-        <!-- <div class="scroll-top">
-            <div class="flex-container-top">
-                <div class="flex flex-top">
-                    <div>
-                        <img style="float: right; margin: 1rem 0.2rem;padding-right: 1rem;" src="assets/check-circle.webp" alt="">
-                        <div class="sub-flex">
-                            <p id="info">Action to take</p>
-                            <img id="info" src="assets\info.webp" alt="" width="16px" height="20px" style="padding-top: 4px;">
-                        </div>
-                        <div class="sub-flex1">
-                            <h2>24</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex  flex-top">
-                    <div>
-                        <img style="float: right; margin: 1rem 0.2rem;padding-right: 1rem;" src="assets/clock.webp" alt="">
-                        <div class="sub-flex">
-                            <p id="info">Pending approvals</p>
-                            <img id="info" src="assets\info.webp" alt="" width="16px" height="20px" style="padding-top: 4px;">
-                        </div>
-                        <div class="sub-flex1">
-                            <h2>13</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex  flex-top">
-                    <div>
-                        <img style="float: right; margin: 1rem 0.2rem;padding-right: 1rem;" src="assets/Group 33740.webp" alt="">
-                        <div class="sub-flex">
-                            <p id="info">Delivered in full</p>
-                            <img id="info" src="assets\info.webp" alt="" width="16px" height="20px" style="padding-top: 4px;">
-                        </div>
-                        <div class="sub-flex1">
-                            <h2>97%</h2>
-                            <h6 style="margin-top: 1rem;margin-left: 0.5rem;color: gray;">Last 7 days</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex  flex-top">
-                    <div>
-                        <img style="float: right; margin: 1rem 0.2rem;padding-right: 1rem;" src="assets/Group 33740.webp" alt="">
-                        <div class="sub-flex">
-                            <p id="info">Inbound Freight as % COGS</p>
-                            <img id="info" src="assets\info.webp" alt="" width="16px" height="20px" style="padding-top: 4px;">
-                        </div>
-                        <div class="sub-flex1">
-                            <div class="color_circles">
-                                <div>
-                                    <p>Frozen</p>
-                                    <div class="circle"></div>5%
-                                </div>
-                                <div>
-                                    <p>Pershable</p>
-                                    <div class="circle1"></div>3%
-                                </div>
-                                <div>
-                                    <p>Fresh</p>
-                                    <div class="circle2"></div>6%
-                                </div>
-                                <div>
-                                    <p>Dry</p>
-                                    <div class="circle3"></div>10%
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-top">
-                    <div>
-                        <img style="float: right; margin: 1rem 0.2rem;padding-right: 1rem;" src="assets/check-circle.webp" alt="">
-                        <div class="sub-flex">
-                            <p id="info">Action to take</p>
-                            <img id="info" src="assets\info.webp" alt="" width="16px" height="20px" style="padding-top: 4px;">
-                        </div>
-                        <div class="sub-flex1">
-                            <h2>24</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
 
         <div class="g-scroll">
             <div class="container">
-
-
-                <div class="grid_box">
+                <div class="actions">
                     <div>
                         <div class="info">
                             <div>Actions to take</div>
@@ -153,7 +70,7 @@
                     <div><img src="/assets/check-circle.webp" alt="tick"></div>
                 </div>
 
-                <div class="grid_box">
+                <div class="actions">
                     <div>
                         <div class="info">
                             <div>Pending approvals</div>
@@ -164,7 +81,7 @@
                     <div><img src="/assets/clock.webp" alt="clocking"></div>
                 </div>
 
-                <div class="grid_box">
+                <div class="actions">
                     <div>
                         <div class="info">
                             <div>Delivery in full</div>
@@ -180,7 +97,7 @@
                     <div class="igb">
                         <div class="info">
                             <div>
-                                <p class="last_grid_box_para">Inbound Freight as % of COGS</p>
+                                <p class="last_actions_para">Inbound Freight as % of COGS</p>
                             </div>
                             <div> <img src="/assets/info.webp" alt="icon"></div>
                         </div>
@@ -211,7 +128,7 @@
 
                 </div>
 
-                <div class="grid_box">
+                <div class="actions">
                     <div>
                         <div class="info">
                             <div>On Time Delivery</div>
@@ -222,7 +139,7 @@
                     <div><img src="/assets/check-circle.webp" alt="tick"></div>
                 </div>
 
-                <div class="grid_box">
+                <div class="actions">
                     <div>
                         <div class="info">
                             <div>Cost/Pound/Mile</div>
@@ -233,77 +150,72 @@
                     </div>
                     <div><img src="/assets/check-circle.webp" alt="tick"></div>
                 </div>
-
-
-
-
             </div>
         </div>
 
 
-        <div id="flex-container">
+        <div id="shipment-details">
             <div id="left">
                 <div id="top">
-                    <div class="flex flex-demo" id="first">
-                        <div class="flex flex1" style="flex-grow: 4">
-                            <div class="sub-ship">
-                                <div>
-                                    <ol>
-                                        <li id="it6" class="iow bor-white bor-active" onclick="it6()">Inbound</li>
-                                        <li id="it7" class="iow bor-white" onclick="it7()">Outbound</li>
-                                        <li id="it8" class="iow bor-white" onclick="it8()">Watchlist</li>
-                                    </ol>
-                                </div>
-                                <div id="viewAll">
-                                    <p style="cursor: pointer;">view all shipments ></p>
-                                </div>
+                    <div id="first" style="flex-grow: 4;">
+                        <div class="sub-ship">
+                            <div>
+                                <ol>
+                                    <li id="it6" class="iow bor-white bor-active" onclick="it6()">Inbound</li>
+                                    <li id="it7" class="iow bor-white" onclick="it7()">Outbound</li>
+                                    <li id="it8" class="iow bor-white" onclick="it8()">Watchlist</li>
+                                </ol>
                             </div>
-                            <div class="search">
-                                <div class="sear">
-                                    <span id="bg-active" class="hover-box">All<b>(25)</b></span>
-                                    <span class="hover-box">Delayed<b>(10)</b></span>
-                                    <span class="hover-box">Early<b>(6)</b></span>
-                                    <span class="hover-box">Rescheduled<b>(2)</b></span>
-                                    <span class="hover-box">UnderReview<b>(7)</b></span>
-                                    <span class="hover-box">OnTime<b>(7)</b></span>
-                                </div>
-                                <div>
-                                    <div>
-                                        <span class="material-symbols-outlined">
+                            <div id="viewAll">
+                                <p style="cursor: pointer;">view all shipments ></p>
+                            </div>
+                            <div id="viewAll-m" class="viewAll-m">
+                                <p style="cursor: pointer;">view all ></p>
+                            </div>
+                        </div>
+                        <div class="search">
+                            <div class="sear">
+                                <span id="bg-active" class="detail-box">All<b>(25)</b></span>
+                                <span class="detail-box">Delayed<b>(10)</b></span>
+                                <span class="detail-box">Early<b>(6)</b></span>
+                                <span class="detail-box">Rescheduled<b>(2)</b></span>
+                                <span class="detail-box">UnderReview<b>(7)</b></span>
+                                <span class="detail-box">OnTime<b>(7)</b></span>
+                            </div>
+                            <div>
+                                <div class="search-bar">
+                                    <span class="material-symbols-outlined">
                                             search
                                         </span>
-                                        <input type="text" placeholder="Search by: Shipment ID, Origin, Destination,Product category,vendor">
-                                    </div>
+                                    <input type="text" placeholder="Search by: Shipment ID, Origin, Destination,Product category,vendor">
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
 
 
                 <div id="bottom">
-                    <div class="flex flex-demo" id="fourth">
-                        <div class="firstone">
-                            <div class="flex_one">
+                    <div class="flex" id="fourth">
+                        <div class="shipments">
+                            <div class="shipment-info">
                                 <div class="shipping_block">
                                     <p class="shipping">Shipment_ID</p>
                                     <p class="ship_number">109669449</p>
                                 </div>
                                 <div class="images_block">
-                                    <div class="immaging">
+                                    <div class="transportation">
                                         <img src="/assets/Group 33891.webp">
                                     </div>
-                                    <div class="immaging">
+                                    <div class="transportation">
                                         <img src="/assets/Group 33887.png">
                                     </div>
-                                    <div class="immaging">
+                                    <div class="transportation">
                                         <p>ON TIME</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex_two">
+                            <div class="location-info">
                                 <div class="arrow_1">
                                     <div>
                                         <img src="/assets/Vectorimage.png">
@@ -324,20 +236,20 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex_three">
+                            <div class="vendor-info">
                                 <div>
-                                    <p class="three_1">PO#<br></p>
-                                    <p class="no">661234</p>
+                                    <p class="vendor-details">PO#<br></p>
+                                    <p class="vendor-eta">661234</p>
                                     <br>
-                                    <p class="three_1">Vendor</p>
-                                    <p class="no">Bailey</p>
+                                    <p class="vendor-details">Vendor</p>
+                                    <p class="vendor-eta">Bailey</p>
                                 </div>
                                 <div class="right_side">
-                                    <p class="three_1">Planned ETA<br></p>
-                                    <p class="no">Jan 27, 2021 03:42 PM EST</p>
+                                    <p class="vendor-details">Planned ETA<br></p>
+                                    <p class="vendor-eta">Jan 27, 2021 03:42 PM EST</p>
                                     <br>
-                                    <p class="three_1">Current ETA</p>
-                                    <p class="no">Jan 31,2021 10:17 PM EST</p>
+                                    <p class="vendor-details">Current ETA</p>
+                                    <p class="vendor-eta">Jan 31,2021 10:17 PM EST</p>
                                 </div>
                             </div>
                             <div class="footering">
@@ -352,25 +264,25 @@
                         </div>
 
 
-                        <div class="firstone">
-                            <div class="flex_one">
+                        <div class="shipments">
+                            <div class="shipment-info">
                                 <div class="shipping_block">
                                     <p class="shipping">Shipment_ID</p>
                                     <p class="ship_number">109669449</p>
                                 </div>
                                 <div class="images_block">
-                                    <div class="immaging">
+                                    <div class="transportation">
                                         <img src="/assets/Group 33891.webp">
                                     </div>
-                                    <div class="immaging">
+                                    <div class="transportation">
                                         <img src="/assets/Group 33887.png">
                                     </div>
-                                    <div class="immaging">
+                                    <div class="transportation">
                                         <p>ON TIME</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex_two">
+                            <div class="location-info">
                                 <div class="arrow_1">
                                     <div>
                                         <img src="/assets/Vectorimage.png">
@@ -391,20 +303,20 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex_three">
+                            <div class="vendor-info">
                                 <div>
-                                    <p class="three_1">PO#<br></p>
-                                    <p class="no">661234</p>
+                                    <p class="vendor-details">PO#<br></p>
+                                    <p class="vendor-eta">661234</p>
                                     <br>
-                                    <p class="three_1">Vendor</p>
-                                    <p class="no">Bailey</p>
+                                    <p class="vendor-details">Vendor</p>
+                                    <p class="vendor-eta">Bailey</p>
                                 </div>
                                 <div class="right_side">
-                                    <p class="three_1">Planned ETA<br></p>
-                                    <p class="no">Jan 27, 2021 03:42 PM EST</p>
+                                    <p class="vendor-details">Planned ETA<br></p>
+                                    <p class="vendor-eta">Jan 27, 2021 03:42 PM EST</p>
                                     <br>
-                                    <p class="three_1">Current ETA</p>
-                                    <p class="no">Jan 31,2021 10:17 PM EST</p>
+                                    <p class="vendor-details">Current ETA</p>
+                                    <p class="vendor-eta">Jan 31,2021 10:17 PM EST</p>
                                 </div>
                             </div>
                             <div class="footering">
@@ -418,25 +330,25 @@
 
                         </div>
 
-                        <div class="firstone">
-                            <div class="flex_one">
+                        <div class="shipments">
+                            <div class="shipment-info">
                                 <div class="shipping_block">
                                     <p class="shipping">Shipment_ID</p>
                                     <p class="ship_number">109669449</p>
                                 </div>
                                 <div class="images_block">
-                                    <div class="immaging">
+                                    <div class="transportation">
                                         <img src="/assets/Group 33891.webp">
                                     </div>
-                                    <div class="immaging">
+                                    <div class="transportation">
                                         <img src="/assets/Group 33887.png">
                                     </div>
-                                    <div class="immaging">
+                                    <div class="transportation">
                                         <p style="background-color: #f620201A; color: #f62020;">DELAYED</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex_two">
+                            <div class="location-info">
                                 <div class="arrow_1">
                                     <div>
                                         <img src="/assets/Vectorimage.png">
@@ -457,20 +369,20 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex_three">
+                            <div class="vendor-info">
                                 <div>
-                                    <p class="three_1">PO#<br></p>
-                                    <p class="no">661234</p>
+                                    <p class="vendor-details">PO#<br></p>
+                                    <p class="vendor-eta">661234</p>
                                     <br>
-                                    <p class="three_1">Vendor</p>
-                                    <p class="no">Bailey</p>
+                                    <p class="vendor-details">Vendor</p>
+                                    <p class="vendor-eta">Bailey</p>
                                 </div>
                                 <div class="right_side">
-                                    <p class="three_1">Planned ETA<br></p>
-                                    <p class="no">Jan 27, 2021 03:42 PM EST</p>
+                                    <p class="vendor-details">Planned ETA<br></p>
+                                    <p class="vendor-eta">Jan 27, 2021 03:42 PM EST</p>
                                     <br>
-                                    <p class="three_1">Current ETA</p>
-                                    <p class="no">Jan 31,2021 10:17 PM EST</p>
+                                    <p class="vendor-details">Current ETA</p>
+                                    <p class="vendor-eta">Jan 31,2021 10:17 PM EST</p>
                                 </div>
                             </div>
                             <div class="footering">
@@ -484,25 +396,25 @@
 
                         </div>
 
-                        <div class="firstone">
-                            <div class="flex_one">
+                        <div class="shipments">
+                            <div class="shipment-info">
                                 <div class="shipping_block">
                                     <p class="shipping">Shipment_ID</p>
                                     <p class="ship_number">109669449</p>
                                 </div>
                                 <div class="images_block">
-                                    <div class="immaging">
+                                    <div class="transportation">
                                         <img src="/assets/Group 33891.webp">
                                     </div>
-                                    <div class="immaging">
+                                    <div class="transportation">
                                         <img src="/assets/Group 33887.png">
                                     </div>
-                                    <div class="immaging">
+                                    <div class="transportation">
                                         <p style="background-color: #e7f4ff; color: #53cb5d;">RESHEDULED</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex_two">
+                            <div class="location-info">
                                 <div class="arrow_1">
                                     <div>
                                         <img src="/assets/Vectorimage.png">
@@ -523,20 +435,20 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex_three">
+                            <div class="vendor-info">
                                 <div>
-                                    <p class="three_1">PO#<br></p>
-                                    <p class="no">661234</p>
+                                    <p class="vendor-details">PO#<br></p>
+                                    <p class="vendor-eta">661234</p>
                                     <br>
-                                    <p class="three_1">Vendor</p>
-                                    <p class="no">Bailey</p>
+                                    <p class="vendor-details">Vendor</p>
+                                    <p class="vendor-eta">Bailey</p>
                                 </div>
                                 <div class="right_side">
-                                    <p class="three_1">Planned ETA<br></p>
-                                    <p class="no">Jan 27, 2021 03:42 PM EST</p>
+                                    <p class="vendor-details">Planned ETA<br></p>
+                                    <p class="vendor-eta">Jan 27, 2021 03:42 PM EST</p>
                                     <br>
-                                    <p class="three_1">Current ETA</p>
-                                    <p class="no">Jan 31,2021 10:17 PM EST</p>
+                                    <p class="vendor-details">Current ETA</p>
+                                    <p class="vendor-eta">Jan 31,2021 10:17 PM EST</p>
                                 </div>
                             </div>
                             <div class="footering">
@@ -554,11 +466,11 @@
                 </div>
             </div>
             <div class="right">
-                <div class="flex flex-demo" id="fifth">
-                    <div class="head2">
-                        <span id="rc">Risk Chain <img id="rcl" src="assets/Group 33767.webp" alt=""></span>
+                <div id="fifth">
+                    <div class="map-block">
+                        <span id="map-header">Risk Chain</span> <img id="cross-arrow" src="assets/Group 33767.webp" alt="">
                     </div>
-                    <center id="texttt">
+                    <center id="map">
                         <h2>UST Omni Services</h2>
                         <br>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis enim quibusdam consequatur excepturi, ad adipisci dicta natus, nobis atque quod suscipit vitae omnis. Doloribus natus harum, odit iste quis nulla deserunt beatae
