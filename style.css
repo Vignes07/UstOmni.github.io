@@ -542,6 +542,17 @@ body {
 }
 
 @media (min-width:768px) and (max-width:1400px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar-profile-m {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding-right: 3rem;
+    }
     .items-m {
         display: inline-flex;
         cursor: pointer;
@@ -983,6 +994,17 @@ body {
 }
 
 @media (max-width:768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar-profile-m {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding-right: 3rem;
+    }
     .hamitems-m {
         background-color: white;
         height: auto;
