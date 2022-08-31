@@ -11,97 +11,177 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;400&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="head">
+        <div class="whole_head">
+            <div class="ust_omni_for_mobile">
+                <img src="./assets/UST Omni.webp" alt="omni_img">
+            </div>
 
+
+
+            <div class="user_login_for_mobile">
+                <div class="ex_circle_mobile">
+                    <div>
+                        <a href="#"><img src="./assets/Group 34136.webp" alt="exclamation"></a>
+                    </div>
+                    <div class="circle_red"></div>
+                </div>
+                <div class="ex_circle_mobile">
+                    <div>
+                        <a href="#"><img src="./assets/Group 34183.webp" alt="bell_icon"></a>
+                    </div>
+                    <div class="circle_red"></div>
+                </div>
+                <div class="login_mobile">
+                    <div>
+                        <a href="#" class="user">
+                            <p>User</p>
+                        </a>
+                    </div>
+                    <div style="transform: translateY(-2px);">
+                        <a href="#"><i id="usrl" class="fa fa-user-circle-o fa-lg" aria-hidden="true""></i></a>
+                    </div>
+                </div>
+            </div>
+            <ul class="menu">
+                <a href="#">
+                    <div class="nav_block_mobile active">
+                        <div><img src="./assets/Home.webp" alt="home"></div>
+                        <div class="mob">Dashboard</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav_block_mobile">
+                        <div><img src="./assets/Shipment_Mgmt.webp" alt="shipment_img"></div>
+                        <div class="mob">Shipment</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav_block_mobile">
+                        <div><img src="./assets/file.png" alt="report_img"></div>
+                        <div class="mob">Reports</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav_block_mobile">
+                        <div><img src="./assets/cont.png" alt="tower_img"></div>
+                        <div class="mob">Control Tower</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="nav_block_mobile nav_block1_mobile">
+                        <div><img src="./assets/act.png" alt="setting_img"></div>
+                        <div class="mob">Action Panel</div>
+                    </div>
+                </a>
+                <!-- </div>
+        </nav> -->
+
+            </ul>
+            <button class="hamburger">
+        <!-- material icons https://material.io/resources/icons/ -->
+        <i class="menuIcon material-icons">&#9776;</i>
+        <i class="closeIcon material-icons">&#10006;</i>
+      </button>
+        </div>
+    </div>
 
     <header class="header">
         <nav id="hamnav">
-            <label style="float: right;" for="hamburger">&#9776;</label>
+            <label class="hamnav-logo" style="float: right;" for="hamburger">&#9776;</label>
+            <!-- <label style="float: right;" for="close">&#10006;</label> -->
             <input style="float: right;" type="checkbox" id="hamburger" />
             <div class="navbar">
                 <div class="navbar-logo">
-                    <img id="logo" src="assets\UST Omni.webp" alt="">
+                    <img id="logo" src="./assets/UST Omni.webp" alt="">
                 </div>
                 <div style="width: 100%;" id="hamitems" class="hamitems navbar-items">
-                    <div id="it1" class="items item1 bor-white bor-active" onclick="it1()"><img class="it-l" src="assets\Home.webp" alt="">Dashboard</div>
-                    <div id="it2" class="items item2 bor-white" onclick="it2()"><img class=" it-l " src="assets\Shipment_Mgmt.webp " alt=" ">Shipments</div>
-                    <div id="it3" class="items item3 bor-white" onclick="it3()"><img class="it-l" src="assets\file.png" alt="">Reports</div>
-                    <div id="it4" class="items item4 bor-white" onclick="it4()"><img class=" it-l " src="assets\cont.png " alt=" ">Control Tower</div>
-                    <div id="it5" class="items item5 bor-white" onclick="it5()"><img class="it-l" src="assets\act.png" alt="">Action Panel</div>
+                    <div id="it1" class="items item1 bor-white bor-active" onclick="it1()"><img class="it-l" src="./assets/Home.webp" alt="">Dashboard</div>
+                    <div id="it2" class="items item2 bor-white" onclick="it2()"><img class=" it-l " src="./assets/Shipment_Mgmt.webp " alt=" ">Shipments</div>
+                    <div id="it3" class="items item3 bor-white" onclick="it3()"><img class="it-l" src="./assets/file.png" alt="">Reports</div>
+                    <div id="it4" class="items item4 bor-white" onclick="it4()"><img class=" it-l " src="./assets/cont.png " alt=" ">Control Tower</div>
+                    <div id="it5" class="items item5 bor-white" onclick="it5()"><img class="it-l" src="./assets/act.png" alt="">Action Panel</div>
                 </div>
                 <div class="an">
-                    <img id="alert" src="assets\Group 34136.webp" alt="">
-                    <img id="notification" src="assets\Group 34183.webp" alt="">
+                    <img id="alert" src="./assets/Group 34136.webp" alt="">
+                    <img id="notification" src="./assets/Group 34183.webp" alt="">
                 </div>
                 <div class="navbar-profile">
                     <p id="user">Profile <i id="usrl" class="fa fa-user-circle-o" aria-hidden="true"></i></p>
                 </div>
                 <div class="navbar-profile-m">
-                    <img id="alert" src="assets\Group 34136.webp" alt="">
-                    <img id="notification" src="assets\Group 34183.webp" alt="">
+                    <img id="alert" src="./assets/Group 34136.webp" alt="">
+                    <img id="notification" src="./assets/Group 34183.webp" alt="">
                     <i id="usrl" class="fa fa-user-circle-o" aria-hidden="true"></i>
                 </div>
             </div>
             <div id="hamitems-m" class="hamitems-m navbar-items-m">
-                <div class="items-m item1-m bor-white bor-active-m" onclick="it1()"><img class="it-l" src="assets\Home.webp" alt="">Dashboard</div>
-                <div class="items-m item2-m bor-white" onclick="it2()"><img class=" it-l " src="assets\Shipment_Mgmt.webp " alt=" ">Shipments</div>
-                <div class="items-m item3-m bor-white" onclick="it3()"><img class="it-l" src="assets\file.png" alt="">Reports</div>
-                <div class="items-m item4-m bor-white" onclick="it4()"><img class=" it-l " src="assets\cont.png " alt=" ">Control Tower</div>
-                <div class="items-m item5-m bor-white" onclick="it5()"><img class="it-l" src="assets\act.png" alt="">Action Panel</div>
+                <div class="items-m item1-m bor-white bor-active-m" onclick="it1()"><img class="it-l" src="./assets/Home.webp" alt="">Dashboard</div>
+                <div class="items-m item2-m bor-white" onclick="it2()"><img class=" it-l " src="./assets/Shipment_Mgmt.webp " alt=" ">Shipments</div>
+                <div class="items-m item3-m bor-white" onclick="it3()"><img class="it-l" src="./assets/file.png" alt="">Reports</div>
+                <div class="items-m item4-m bor-white" onclick="it4()"><img class=" it-l " src="./assets/cont.png " alt=" ">Control Tower</div>
+                <div class="items-m item5-m bor-white" onclick="it5()"><img class="it-l" src="./assets/act.png" alt="">Action Panel</div>
             </div>
         </nav>
     </header>
 
     <div class="main">
 
-        <div class="g-scroll">
-            <div class="container">
+        <div id="g-scroll" class="g-scroll">
+            <div class="carosel">
+                <div id="prev" class="prev" onclick="prev()">
+                    <img src="./assets/Vector@3x-l.png" alt="" width="6px">
+                </div>
+                <div id="next" class="next" onclick="next()">
+                    <img src="./assets/Vector@3x.png" alt="" width="6px">
+                </div>
+            </div>
+            <div id="action-scroll" class="container">
                 <div class="actions">
                     <div>
                         <div class="info">
                             <div>Actions to take</div>
-                            <div> <img src="/assets/info.webp" alt="icon"></div>
+                            <div> <img src="./assets/info.webp" alt="icon"></div>
                         </div>
 
                         <span class="num">24</span>
                     </div>
-                    <div><img src="/assets/check-circle.webp" alt="tick"></div>
+                    <div><img src="./assets/check-circle.webp" alt="tick"></div>
                 </div>
 
                 <div class="actions">
                     <div>
                         <div class="info">
                             <div>Pending approvals</div>
-                            <div> <img src="/assets/info.webp" alt="icon"></div>
+                            <div> <img src="./assets/info.webp" alt="icon"></div>
                         </div>
                         <span class="num">13</span>
                     </div>
-                    <div><img src="/assets/clock.webp" alt="clocking"></div>
+                    <div><img src="./assets/clock.webp" alt="clocking"></div>
                 </div>
 
                 <div class="actions">
                     <div>
                         <div class="info">
                             <div>Delivery in full</div>
-                            <div> <img src="/assets/info.webp" alt="icon"></div>
+                            <div> <img src="./assets/info.webp" alt="icon"></div>
                         </div>
                         <span class="num">97% </span><sub>Last 7 days</sub>
                     </div>
-                    <div><img src="/assets/Group 33740.webp" alt="deliver"></div>
+                    <div><img src="./assets/Group 33740.webp" alt="deliver"></div>
                 </div>
 
 
-                <div class="lgb">
+                <div class="actions lgb">
                     <div class="igb">
                         <div class="info">
                             <div>
                                 <p class="last_actions_para">Inbound Freight as % of COGS</p>
                             </div>
-                            <div> <img src="/assets/info.webp" alt="icon"></div>
+                            <div> <img src="./assets/info.webp" alt="icon"></div>
                         </div>
 
                         <div class="cc">
@@ -125,7 +205,7 @@
                     </div>
 
                     <div class="si">
-                        <img src="/assets/Group 33741.webp" alt="fro">
+                        <img src="./assets/Group 33741.webp" alt="fro">
                     </div>
 
                 </div>
@@ -134,23 +214,23 @@
                     <div>
                         <div class="info">
                             <div>On Time Delivery</div>
-                            <div> <img src="/assets/info.webp" alt="icon"></div>
+                            <div> <img src="./assets/info.webp" alt="icon"></div>
                         </div>
                         <span class="num">93% </span><sub>Last 7 days</sub>
                     </div>
-                    <div><img src="/assets/check-circle.webp" alt="tick"></div>
+                    <div><img src="./assets/check-circle.webp" alt="tick"></div>
                 </div>
 
                 <div class="actions">
                     <div>
                         <div class="info">
                             <div>Cost/Pound/Mile</div>
-                            <div> <img src="/assets/info.webp" alt="icon"></div>
+                            <div> <img src="./assets/info.webp" alt="icon"></div>
                         </div>
 
                         <span class="num">$1.45 </span><sub>Last 7 days</sub>
                     </div>
-                    <div><img src="/assets/check-circle.webp" alt="tick"></div>
+                    <div><img src="./assets/check-circle.webp" alt="tick"></div>
                 </div>
             </div>
         </div>
@@ -176,20 +256,24 @@
                             </div>
                         </div>
                         <div class="search">
-                            <div class="sear">
-                                <span id="bg-active" class="detail-box">All<b>(25)</b></span>
-                                <span class="detail-box">Delayed<b>(10)</b></span>
-                                <span class="detail-box">Early<b>(6)</b></span>
-                                <span class="detail-box">Rescheduled<b>(2)</b></span>
-                                <span class="detail-box">UnderReview<b>(7)</b></span>
-                                <span class="detail-box">OnTime<b>(7)</b></span>
+                            <div id="inboundPrev" class="mob_scroll_prev" onclick="prevSearch()"><img src="./assets/Group 36990.png"></div>
+                            <div id="inboundNext" class="mob_scroll" onclick="nextSearch()"><img src="./assets/Group 36989.png"></div>
+                            <div id="sear">
+                                <div class="sear">
+                                    <span class="detail-box">All<b>(25)</b></span>
+                                    <span class="detail-box">Delayed<b>(10)</b></span>
+                                    <span class="detail-box">Early<b>(6)</b></span>
+                                    <span class="detail-box">Rescheduled<b>(2)</b></span>
+                                    <span class="detail-box">UnderReview<b>(7)</b></span>
+                                    <span class="detail-box">OnTime<b>(7)</b></span>
+                                </div>
                             </div>
                             <div>
                                 <div class="search-bar">
-                                    <span class="material-symbols-outlined">
+                                    <span style="cursor: pointer;" class="material-symbols-outlined">
                                             search
                                         </span>
-                                    <input type="text" placeholder="Search by: Shipment ID, Origin, Destination,Product category,vendor">
+                                    <input onchange="search_keys()" id="srch" type="text" placeholder="Search by: Shipment ID, Origin, Destination,Product category,vendor">
                                 </div>
                             </div>
                         </div>
@@ -198,8 +282,12 @@
 
 
                 <div id="bottom">
-                    <div class="flex" id="fourth">
-                        <div class="shipments">
+                    <div class="flex shipments-block" id="fourth">
+                        <div id="NoData" class="shipments NoData" style="display: none; height: 380px; align-items: center; justify-content: center;">
+                            <p>No Data Found</p>
+                        </div>
+
+                        <div id="109669449" class="shipments 109669449">
                             <div class="shipment-info">
                                 <div class="shipping_block">
                                     <p class="shipping">Shipment_ID</p>
@@ -207,10 +295,10 @@
                                 </div>
                                 <div class="images_block">
                                     <div class="transportation">
-                                        <img src="/assets/Group 33891.webp">
+                                        <img src="./assets/Group 33891.webp">
                                     </div>
                                     <div class="transportation">
-                                        <img src="/assets/Group 33887.png">
+                                        <img src="./assets/Group 33887.png">
                                     </div>
                                     <div class="transportation">
                                         <p>ON TIME</p>
@@ -220,7 +308,7 @@
                             <div class="location-info">
                                 <div class="arrow_1">
                                     <div>
-                                        <img src="/assets/Vectorimage.png">
+                                        <img src="./assets/Vectorimage.png">
                                     </div>
 
                                     <div class="starting">
@@ -230,7 +318,7 @@
                                 </div>
                                 <div class="arrow_2">
                                     <div>
-                                        <img src="/assets/Vector.png">
+                                        <img src="./assets/downarrow.png">
                                     </div>
                                     <div class="ending">
                                         <p class="dest">Destination<br></p>
@@ -255,29 +343,29 @@
                                 </div>
                             </div>
                             <div class="footering">
-                                <img src="assets\icon_Fire.png" alt="im1">
-                                <img src="assets\icon_Fire1.png" alt="im2">
-                                <img src="assets\Group 37169.png" alt="im3">
-                                <img src="assets\icon_Fire3.png" alt="im4">
-                                <img src="assets\icon_Fire4.png" alt="im5">
-                                <img src="assets\icon_Fire5.png" alt="im6">
+                                <img src="./assets/icon_Fire.png" alt="im1">
+                                <img src="./assets/icon_Fire1.png" alt="im2">
+                                <img src="./assets/Group 37169.png" alt="im3">
+                                <img src="./assets/icon_Fire3.png" alt="im4">
+                                <img src="./assets/icon_Fire4.png" alt="im5">
+                                <img src="./assets/icon_Fire5.png" alt="im6">
                             </div>
 
                         </div>
 
 
-                        <div class="shipments">
+                        <div id="109669445" class="shipments 109669445">
                             <div class="shipment-info">
                                 <div class="shipping_block">
                                     <p class="shipping">Shipment_ID</p>
-                                    <p class="ship_number">109669449</p>
+                                    <p class="ship_number">109669445</p>
                                 </div>
                                 <div class="images_block">
                                     <div class="transportation">
-                                        <img src="/assets/Group 33891.webp">
+                                        <img src="./assets/Group 33891.webp">
                                     </div>
                                     <div class="transportation">
-                                        <img src="/assets/Group 33887.png">
+                                        <img src="./assets/Group 33887.png">
                                     </div>
                                     <div class="transportation">
                                         <p>ON TIME</p>
@@ -287,21 +375,21 @@
                             <div class="location-info">
                                 <div class="arrow_1">
                                     <div>
-                                        <img src="/assets/Vectorimage.png">
+                                        <img src="./assets/Vectorimage.png">
                                     </div>
 
                                     <div class="starting">
                                         <p class="start">Origin</p>
-                                        <p class="stat_last">Sikkim, IN</p>
+                                        <p class="stat_last">Delhi, IN</p>
                                     </div>
                                 </div>
                                 <div class="arrow_2">
                                     <div>
-                                        <img src="/assets/Vector.png">
+                                        <img src="./assets/downarrow.png">
                                     </div>
                                     <div class="ending">
                                         <p class="dest">Destination<br></p>
-                                        <p class="dest_last">Seattle, USA</p>
+                                        <p class="dest_last">Chicago, USA</p>
                                     </div>
                                 </div>
                             </div>
@@ -322,28 +410,28 @@
                                 </div>
                             </div>
                             <div class="footering">
-                                <img src="assets\icon_Fire.png" alt="im1">
-                                <img src="assets\icon_Fire1.png" alt="im2">
-                                <img src="assets\Group 37169.png" alt="im3">
-                                <img src="assets\icon_Fire3.png" alt="im4">
-                                <img src="assets\icon_Fire4.png" alt="im5">
-                                <img src="assets\icon_Fire5.png" alt="im6">
+                                <img src="./assets/icon_Fire.png" alt="im1">
+                                <img src="./assets/icon_Fire1.png" alt="im2">
+                                <img src="./assets/Group 37169.png" alt="im3">
+                                <img src="./assets/icon_Fire3.png" alt="im4">
+                                <img src="./assets/icon_Fire4.png" alt="im5">
+                                <img src="./assets/icon_Fire5.png" alt="im6">
                             </div>
 
                         </div>
 
-                        <div class="shipments">
+                        <div id="109669441" class="shipments 109669441">
                             <div class="shipment-info">
                                 <div class="shipping_block">
                                     <p class="shipping">Shipment_ID</p>
-                                    <p class="ship_number">109669449</p>
+                                    <p class="ship_number">109669441</p>
                                 </div>
                                 <div class="images_block">
                                     <div class="transportation">
-                                        <img src="/assets/Group 33891.webp">
+                                        <img src="./assets/Group 33891.webp">
                                     </div>
                                     <div class="transportation">
-                                        <img src="/assets/Group 33887.png">
+                                        <img src="./assets/Group 33887.png">
                                     </div>
                                     <div class="transportation">
                                         <p style="background-color: #f620201A; color: #f62020;">DELAYED</p>
@@ -353,21 +441,21 @@
                             <div class="location-info">
                                 <div class="arrow_1">
                                     <div>
-                                        <img src="/assets/Vectorimage.png">
+                                        <img src="./assets/Vectorimage.png">
                                     </div>
 
                                     <div class="starting">
                                         <p class="start">Origin</p>
-                                        <p class="stat_last">Sikkim, IN</p>
+                                        <p class="stat_last">Chennai, IN</p>
                                     </div>
                                 </div>
                                 <div class="arrow_2">
                                     <div>
-                                        <img src="/assets/Vector.png">
+                                        <img src="./assets/downarrow.png">
                                     </div>
                                     <div class="ending">
                                         <p class="dest">Destination<br></p>
-                                        <p class="dest_last">Seattle, USA</p>
+                                        <p class="dest_last">London, UK</p>
                                     </div>
                                 </div>
                             </div>
@@ -388,28 +476,28 @@
                                 </div>
                             </div>
                             <div class="footering">
-                                <img src="assets\icon_Fire.png" alt="im1">
-                                <img src="assets\icon_Fire1.png" alt="im2">
-                                <img src="assets\Group 37169.png" alt="im3">
-                                <img src="assets\icon_Fire3.png" alt="im4">
-                                <img src="assets\icon_Fire4.png" alt="im5">
-                                <img src="assets\icon_Fire5.png" alt="im6">
+                                <img src="./assets/icon_Fire.png" alt="im1">
+                                <img src="./assets/icon_Fire1.png" alt="im2">
+                                <img src="./assets/Group 37169.png" alt="im3">
+                                <img src="./assets/icon_Fire3.png" alt="im4">
+                                <img src="./assets/icon_Fire4.png" alt="im5">
+                                <img src="./assets/icon_Fire5.png" alt="im6">
                             </div>
 
                         </div>
 
-                        <div class="shipments">
+                        <div id="109669444" class="shipments 109669444">
                             <div class="shipment-info">
                                 <div class="shipping_block">
                                     <p class="shipping">Shipment_ID</p>
-                                    <p class="ship_number">109669449</p>
+                                    <p class="ship_number">109669444</p>
                                 </div>
                                 <div class="images_block">
                                     <div class="transportation">
-                                        <img src="/assets/Group 33891.webp">
+                                        <img src="./assets/Group 33891.webp">
                                     </div>
                                     <div class="transportation">
-                                        <img src="/assets/Group 33887.png">
+                                        <img src="./assets/Group 33887.png">
                                     </div>
                                     <div class="transportation">
                                         <p style="background-color: #e7f4ff; color: #53cb5d;">RESHEDULED</p>
@@ -419,21 +507,21 @@
                             <div class="location-info">
                                 <div class="arrow_1">
                                     <div>
-                                        <img src="/assets/Vectorimage.png">
+                                        <img src="./assets/Vectorimage.png">
                                     </div>
 
                                     <div class="starting">
                                         <p class="start">Origin</p>
-                                        <p class="stat_last">Sikkim, IN</p>
+                                        <p class="stat_last">Mumbai, IN</p>
                                     </div>
                                 </div>
                                 <div class="arrow_2">
                                     <div>
-                                        <img src="/assets/Vector.png">
+                                        <img src="./assets/downarrow.png">
                                     </div>
                                     <div class="ending">
                                         <p class="dest">Destination<br></p>
-                                        <p class="dest_last">Seattle, USA</p>
+                                        <p class="dest_last">Sydney, Australia</p>
                                     </div>
                                 </div>
                             </div>
@@ -454,12 +542,12 @@
                                 </div>
                             </div>
                             <div class="footering">
-                                <img src="assets\icon_Fire.png" alt="im1">
-                                <img src="assets\icon_Fire1.png" alt="im2">
-                                <img src="assets\Group 37169.png" alt="im3">
-                                <img src="assets\icon_Fire3.png" alt="im4">
-                                <img src="assets\icon_Fire4.png" alt="im5">
-                                <img src="assets\icon_Fire5.png" alt="im6">
+                                <img src="./assets/icon_Fire.png" alt="im1">
+                                <img src="./assets/icon_Fire1.png" alt="im2">
+                                <img src="./assets/Group 37169.png" alt="im3">
+                                <img src="./assets/icon_Fire3.png" alt="im4">
+                                <img src="./assets/icon_Fire4.png" alt="im5">
+                                <img src="./assets/icon_Fire5.png" alt="im6">
                             </div>
 
                         </div>
@@ -470,7 +558,7 @@
             <div class="right">
                 <div id="fifth">
                     <div class="map-block">
-                        <span id="map-header">Risk Chain</span> <img id="cross-arrow" src="assets/Group 33767.webp" alt="">
+                        <span id="map-header">Risk Chain</span> <img id="cross-arrow" src="./assets/Group 33767.webp" alt="">
                     </div>
                     <center id="map">
                         <h2>UST Omni Services</h2>
@@ -485,6 +573,9 @@
         </div>
 
     </div>
+
+
+    <script src="script.js"></script>
     <script>
         function removeall() {
             document.getElementById("it1").classList.remove("bor-active")
